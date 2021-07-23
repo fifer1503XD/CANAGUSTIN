@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import Account from "./Account";
 import { ChangeComponent, logout } from "../actions/auth";
 import { GetDataDogs } from "../actions/dogs";
+import Chat from './Chat';
 
 const PublicationScreen = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const PublicationScreen = () => {
       <Navbar/>
       </div>
         
-        hello publication
+        <Chat />
         <Link to="/account" >
                 <button onClick={()=> dispatch(ChangeComponent(Account))}>
                   <span>My Account</span>

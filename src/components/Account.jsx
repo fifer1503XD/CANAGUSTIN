@@ -1,3 +1,4 @@
+import Chat from "./Chat";
 import  Navbar  from "./Navbar";
 
 const Account = () => {
@@ -6,6 +7,7 @@ const Account = () => {
         
         <div>
             <Navbar/>
+            <Chat/>
             hello acount
         </div>
      );
